@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primeiro Programa</title>
+
+<style>
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('imagens/helloW.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Times, serif;
+    color: white;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 7rem;
+    color: black;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* Parágrafo */
+p {
+    font-size: 3.5rem;
+    color: black;
+    text-shadow: 0 0 10px #fff;
+}
+
+/* Animação de entrada */
+h1, p {
+    opacity: 2;
+    transform: scale(0.8);
+    animation: aparecer 2s forwards;
+}
+
+p {
+    animation-delay: 1s;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 2;
+        transform: scale(1);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<h1>Hello, World! 🖖🏿</h1>
+<p>Já me livrei da maldição ✅</p>
+
+<script>
+setTimeout(() => alert('Seja Bem Vindo!'), 500);
+setTimeout(() => confirm('Você está pronto?'), 1200);
+setTimeout(() => prompt('Lets go...'), 2000);
+</script>
+
+</body>
+</html>
